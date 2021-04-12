@@ -1,0 +1,39 @@
+class Feline {
+    constructor() {
+ 
+    }
+ }
+
+
+    class Lion extends Feline {
+         constructor() {
+ 
+    }  
+
+}
+    class Tiger extends Feline {
+   constructor() {
+ 
+    }
+}
+
+
+  var counter = 0;
+  var LionArray = []; 
+  var temp; 
+  // factory pattern to generate 100 person objects
+  for (var i=1; i<=100; i++){
+        temp = Object.create(Lion);
+        temp.uuid = new Date();
+        temp.strength = Math.floor(Math.random() * 100) + 1;
+        LionArray[counter++] = temp;
+
+  }
+  
+  // dereferencing 
+  for (var j = 1; j<100; j++){
+        console.log(LionArray[j].strength);
+      }  
+    
+
+  
