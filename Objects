@@ -1,0 +1,12 @@
+var CaptainKirk = {
+    firstname: "James",
+    lastname: "Kirk",
+    address: {
+        street: "6 Crown Hill Place",
+        city: "Etobicoke"
+        }
+    };
+CaptainKirk.sayHello = function() {return this.rank + "  " + this.firstname + "  " + this.lastname;}
+CaptainKirk.rank = "Captain";
+
+console.log( CaptainKirk.sayHello() )
