@@ -20,3 +20,19 @@ var CaptainKirk = {
 };
 
 console.log( CaptainKirk.weaponStatus() ) 
+
+
+//  The above example with a Constructor:
+
+function StarshipCaptain(firstName, lastName, CommandShip) {
+        this.firstName = firstName;
+        this.lastName = lastName; 
+        this.employer = "Star Fleet Command"
+        this.a = function a(x,y) {return x+y + " " + this.firstName;}
+    }
+
+var CaptainKirk = new StarshipCaptain("James", "Kirk", "USS Enterprise");
+let msg = CaptainKirk.a(3,5);
+console.log(msg);
+
+
