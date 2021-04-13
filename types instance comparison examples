@@ -1,0 +1,39 @@
+// examine the value of variables and the type of variables
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof
+
+class RealObject {
+    constructor( a,   b,   c) {
+        this.color=a;
+        this.size = b;
+        this.shape = c;
+    }
+ }
+
+var fakeobject = {}
+
+let realThing = new RealObject("red", 3, "square");
+let a = 3;
+let b = "3";
+console.log("trace message e: ", realThing.color, " ", realThing.size, " ", realThing.shape, " " );
+console.log("trace message f: ", realThing instanceof Object);
+console.log("trace message h: ", typeof("red") );
+
+
+
+var datestamp = new Date();
+console.log("trace msg a: ", typeof datestamp );
+console.log("trace msg b: ", typeof(fakeobject));
+console.log("trace msg c: ", typeof(realThing));
+console.log("trace msg d: ", typeof [1, 2, 4] === 'object');
+console.log("instance of a ", "cat" instanceof String );
+console.log("instance of b ", b instanceof String );
+
+console.log("instance of a ", typeof(a));
+console.log("instance of b ", typeof(String)) ;
+
+if ( a === b) {
+    console.log ( a , "  is equal to  ", b);
+}
+else {
+    console.log ( a , "  is NOT equal to  ", b);
+}
