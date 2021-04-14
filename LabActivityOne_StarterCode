@@ -1,11 +1,26 @@
+// Summarize your Name, Student ID, Name of Work
+// Course Name and Section
+// Date Submitted
+
+// good style says: keep your class declarations up at the top to be easy to see.
+// because of HOISTING (test questions on what hoisting is) you can declare functions and variables 
+// further down and refer to them above.
+
+// #todo:
+// let's look for ways to bring events, sets, and maps into this
+
+var counter = 0;
+var LionArray = []; 
+var TigerArray = []; 
+var temp;
+
 class Feline {
     constructor() {
  
     }
  }
 
-
-    class Lion extends Feline {
+class Lion extends Feline {
          constructor() {
  
     }  
@@ -17,23 +32,38 @@ class Feline {
     }
 }
 
-
-  var counter = 0;
-  var LionArray = []; 
-  var temp; 
+class Competition {
+    constructor() {
+ 
+    }
   // factory pattern to generate 100 person objects
-  for (var i=1; i<=100; i++){
-        temp = Object.create(Lion);
-        temp.uuid = new Date();
-        temp.strength = Math.floor(Math.random() * 100) + 1;
-        LionArray[counter++] = temp;
+  for (var i=1; i=100; i++){
+    temp = Object.create(Lion);
+    temp.uuid = new Date();
+    temp.strength = Math.floor(Math.random() * 100) + 1;
+    LionArray[counter++] = temp;
 
-  }
-  
-  // dereferencing 
-  for (var j = 1; j<100; j++){
-        console.log(LionArray[j].strength);
-      }  
-    
+    temp = Object.create(Tiger);
+    temp.uuid = new Date();
+    temp.strength = Math.floor(Math.random() * 100) + 1;
+    TigerArray[counter++] = temp;
 
+}
+
+var LionStrength, TigerStrength = 0;
+var numberOfLionWinners, numberOfLionWinners = 0;
+
+// dereferencing 
+for (var j = 1; j<100; j++){
+        LionStrength = LionArray[j].strength;
+        TigerStrength = TigerArray[j].strength;
+        if (LionStrength > TigerStrength){
+            numberOfLionWinners++;
+        }    
+        else {numberOfTigerWinners++;}
+    }  
+
+Console.log("lions: " + numberOfLionWinners + " tigers: " + numberOfTigerWinners)
+
+ }
   
