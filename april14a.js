@@ -1,26 +1,29 @@
 // APRIL14A.JS
-// fix this code so that the counter in orange() causes an escape from function lemon at the right time
-var LogicalFlag = false;
-var globalCounter = 0;
+counter version
 
-function lemon(){
-    if (globalCounter >6) {
+    // APRIL14A.JS
+
+    var globalCounter = 0;
+
+    function lemon(){
         console.log("trace msg A: ", globalCounter)
-        exit();
+    
+        while (true){
+            if (globalCounter >5) {
+                    return;
+                }
+            orange();
+        } 
     }
-    while (!LogicalFlag){
-        orange();
-    } 
-}
 
-function orange(){
-    var counter = 0;
-    for ( ; counter < 3 ; counter++){
-        console.log(counter);
-        globalCounter++;
+    function orange(){
+        var counter = 0;
+        for ( ; counter < 2 ; counter++){
+            console.log(counter);
+            globalCounter++;
+        }
     }
-}
 
-var L = lemon();
-console.log(L);
-console.log("fini");
+    var L = lemon();
+    // console.log(L);
+    console.log("fini");
