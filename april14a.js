@@ -30,17 +30,13 @@ counter version: working version of code
 
 
 
-Logical Flag Version : Not working yet:
-
- // APRIL14A.JS
+Logical Flag Version : working version
+    // APRIL14A.JS
 
     var LogicalFlag = true;
     var occuranceCounter = 0;
 
     function lemon(){
-        if (occuranceCounter >8) LogicalFlag = false;
-        console.log("trace msg A: ", occuranceCounter)
-    
         while (LogicalFlag){
             orange();
         } 
@@ -51,6 +47,8 @@ Logical Flag Version : Not working yet:
         var counter = 0;
         for ( ; counter < 2 ; counter++){
             occuranceCounter++;
+            if (occuranceCounter >8) LogicalFlag = false;
+            console.log("trace msg A: ", occuranceCounter)
             console.log(counter);
         }
     }
