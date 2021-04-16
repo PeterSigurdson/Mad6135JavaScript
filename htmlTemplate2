@@ -4,13 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="peanut2.js"/> 
+    <title>Canadian Grizzy</title>
+    <script= "peanut2.js"/>
        
 </head>
 <body>
+
+    <section>I am section 1
     
-  <a href="www.google.com">Click here to Google</a>
+        <div> I am a DIV in Section 1
+            <hr>
+            <img width="200" src="https://th.bing.com/th/id/R612f4aee8997195b9cd4cc0a3b005e8e?rik=loBAlUHZWwpykg&pid=ImgRaw"/>
+            <hr>
+            </div>
+
+        <article> I am an Article in Section 1</article>
+
+        <section>I am a Section embedded in a Section</section>
+        
+        <p>Here we will add a link to the <a href="https://www.mozilla.org/">Mozilla homepage</a></p>
+    </section>
 
 </body>
 
