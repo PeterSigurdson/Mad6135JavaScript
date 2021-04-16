@@ -6,10 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Canadian Grizzy</title>
     <script= "peanut2.js"/>
-       
+  
 </head>
 <body>
-
+    <script>
+        const link = document.querySelectorAll('a');
+        link.textContent = " Here is a string I injected ";
+        link.href = 'http://Disney.com';
+        const sect = document.querySelector('section');
+        const para = document.createElement('p');
+        para.textContent = 'We hope you enjoyed the ride.';
+        sect.appendChild(para);
+        </script>
+    
     <section>I am section 1
     
         <div> I am a DIV in Section 1
@@ -18,11 +27,11 @@
             <hr>
             </div>
 
-        <article> I am an Article in Section 1</article>
+        <article> <a href="https://jquery.com/">jQuery is a JavaScript Library to create dynamic HMTL User Experiences</a></article>
 
         <section>I am a Section embedded in a Section</section>
         
-        <p>Here we will add a link to the <a href="https://www.mozilla.org/">Mozilla homepage</a></p>
+        <p>Here we will add a link to the <a href="">Mozilla homepage</a></p>
     </section>
 
 </body>
