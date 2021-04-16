@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="UTF-8">
+</head>
+<body>
+    <button onclick="move()">MOVE</button>
+    <script>
+        function move(){ 
+            document.getElementById("outputText").value=
+            document.getElementById("inputText").value;
+         }
+    </script>
+
+input : <input type="text" id="inputText" value=""><hr>
+output: <input type="text" id="outputText" value="">
+
+
+
+</body>
+</html>
