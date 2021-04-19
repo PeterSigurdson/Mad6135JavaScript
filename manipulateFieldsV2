@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Peter's Regex Workbench</title>
+	<meta charset="UTF-8">
+</head>
+<body>
+    <button onclick="move()">MOVE</button>
+    <hr>
+    <script>
+        function move(){ 
+
+            var input = document.getElementById("inputText");
+            var output = document.getElementById("outputText");
+            output.value = input.value;
+            
+         }
+    </script>
+
+input : <input type="text" id="inputText" value=""><hr>
+output: <input type="text" id="outputText" value="">
+
+</body>
+</html>
