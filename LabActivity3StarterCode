@@ -1,0 +1,18 @@
+Your To Do:
+design the algorithm:
+startpos
+endpos
+walk over the entire string: everytime you find a comma, you have identified another FIELD 
+in the RECORD
+Assign it to a temporary data variable
+reset startpos = endpos
+and do it again
+while loop
+
+var record = "Detached,2-Storey,Pickering,Amberlea,2018-01-30,2018-04-30,2018-01-23,2018-01-29,$749990,$755000,$5441,Ada,1730,6,101,3,1,3,45,3,111,Attached,Inground,E4026480,Show And Sell Home! Lock Box For Easy Access  Toll Free 1-888-820-0228  Include Schedule B To All Offers. Please Allow 24 Hours On Irr. Date. Award Winning Landscape Designer. Salt Water Inground Pool With Custom Outdoor Kitchen 42 Twin Eagles Bbq Flagstone Pool Deck Chef's Kitchen & Maple Hardwood Floors With Sunken Living Room Gas Fireplace Pot Lights Crown Moulding. Jennair Gas Stove Dishwasher Washer Dryer Garbourator Gb&E Cvac Cac. Loads Of Upgrades! Backyard Is An Oasis! Finished Basement In 2015 New Front Deck In 2017 New High Efficiency Furnace And Ac In 2017 R50 Insulation In Attic 2014 New Pool Pump In 2017 Professionally Painted On Every Level Upgraded Lighting Throughout The House,1730 Ada Crt,L1V2Z1,Pickering,Finished,Full";
+
+var aChar = ',';
+
+var processedOutput = record.substring(record.indexOf(aChar) + 1);
+
+console.log(processedOutput);
