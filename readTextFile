@@ -1,0 +1,13 @@
+const fs = require('fs')
+var datablock;
+
+fs.readFile('PickeringRealEstate.csv', 'utf-8', (err, data) => {
+    if (err) throw err;
+    datablock = data.toString();
+    // console.log(datablock);
+
+    for (var i=0; i<datablock.length; i++){
+        console.log(datablock[i]);
+    }
+}
+)
