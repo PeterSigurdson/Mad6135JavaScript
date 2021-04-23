@@ -1,0 +1,25 @@
+// sort an array:
+var aRandomWord = '';
+
+function wordGenerator(){
+    var vowels = ['a','e','i','o','u'];
+    var consonants = ['b','c','d','f','g','h','j','k','l','m','n','p','q','r','s','t','u','v','w','x','y','z'];
+    aRandomWord = [consonants[Math.floor(Math.random() * 21)], vowels[Math.floor(Math.random() * 5)], 
+        consonants[Math.floor(Math.random() * 21)]].join('');
+    return aRandomWord;
+}
+class Things{
+    constructor(thing1, thing2){
+        var t1 = thing1;
+        var t2 = thing2;
+    }
+}
+
+var stuff = new Array();
+
+for (var i = 0 ; i <= 10 ; i++) {stuff.push(wordGenerator());}
+
+var temp; 
+for (var j = 0 ; j <= 10 ; j++) {
+    temp = stuff[j]; 
+}
